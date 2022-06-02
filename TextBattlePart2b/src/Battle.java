@@ -124,6 +124,7 @@ public class Battle {
 			//choose between attacking and using an item
 			System.out.print("Type an inventory slot number or 0 to attack: ");
 			int response = input.nextInt();
+			System.out.println();
 			
 			//player's move
 			if(response == 0)
