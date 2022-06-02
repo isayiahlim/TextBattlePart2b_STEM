@@ -38,7 +38,7 @@ public class Mage extends Player
 		else
 		{
 			mana -= cost;
-			System.out.println("Name has " + mana + " mana left.");
+			System.out.println(super.toString() + " has " + mana + " mana left.");
 			return super.attack(monster);
 		}
 	}

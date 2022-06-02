@@ -120,7 +120,7 @@ public class Player
 	//attacks the monster
 	public int attack(Monster monster)
 	{
-		int attackDmg = (int)((Math.random()*(maxDmg-minDmg) + minDmg));
+		int attackDmg = (int)((Math.random()*(maxDmg-minDmg+1) + minDmg));
 		monster.takeDamage(attackDmg);
 		return attackDmg;
 	}

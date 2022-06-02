@@ -31,7 +31,7 @@ public class Rogue extends Player
 		if (chance < critChance)
 		{
 			System.out.println(getName() + " gets a critical hit!");
-			int attackDmg = (int)((Math.random()*(super.getMaxDamage()-super.getMinDamage()+1) 
+			int attackDmg = (int)((Math.random()*(super.getMaxDamage()-super.getMinDamage()+2) 
 					+ super.getMinDamage())) * 2;
 			monster.takeDamage(attackDmg);
 			return attackDmg;
