@@ -168,7 +168,7 @@ public class Battle {
 			//gives random loot
 			Item loot = getLoot(player);
 			player.receiveItem(loot);
-			System.out.println(player.getName() + " has been rewarded with a " + loot);
+			System.out.println(player.getName() + " has been rewarded with a " + loot + ".");
 			return true;
 		}
 	}		
