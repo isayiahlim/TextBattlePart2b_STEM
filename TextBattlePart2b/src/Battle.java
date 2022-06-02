@@ -130,12 +130,10 @@ public class Battle {
 			if(response == 0)
 			{
 				int damage = player.attack(monster);
-				if (damage > 0)
-				{
-					System.out.println(player.getName() + " attacks the " + monster.getType() + 
-							" for " + damage + " damage.");
-					System.out.println(monster);
-				}
+				System.out.println(player.getName() + " attacks the " + monster.getType() + 
+						" for " + damage + " damage.");
+				System.out.println(monster);
+
 			}
 			else
 				player.useItem(response-1);
