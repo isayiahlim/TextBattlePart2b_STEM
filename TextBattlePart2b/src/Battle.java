@@ -162,7 +162,7 @@ public class Battle {
 			System.out.println(player.getName() + " has defeated the " + monster.getType());
 			// heal the player
 			int healnum = (int)(Math.random()*20) + 1;
-			System.out.println(player.getName() + " has been rewarded " + healnum 
+			System.out.println(player.getName() + " has been rewarded with " + healnum 
 					+ " points of health back.");
 			player.healDamage(healnum);
 			//gives random loot
