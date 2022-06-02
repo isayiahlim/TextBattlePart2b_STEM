@@ -25,19 +25,17 @@ public class Rogue extends Player
 	
 	public int attack(Monster monster)
 	{
+		int damage = super.attack(monster);
 		//may increase damage rogue does based on a random chance
 		double chance = Math.random();
 		//critical hit!
 		if (chance < critChance)
 		{
 			System.out.println(getName() + " gets a critical hit!");
-			int attackDmg = (int)((Math.random()*(super.getMaxDamage()-super.getMinDamage()+2) 
-					+ super.getMinDamage())) * 2;
-			monster.takeDamage(attackDmg);
-			return attackDmg;
+			monster.takeDamage(damage);
+			return damage*2;
 		}
-		else 
-			return super.attack(monster);
+		return damage;
 	}
 	public double getCrit()
 	{
